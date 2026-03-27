@@ -1,17 +1,17 @@
 :root {
   /* Background color */
-  --color-bg: #cfceca;
+  --color-bg: #fef2c2;
 
   /* Header background color */
-  --color-head-bg: #625e5c;
+  --color-head-bg: #80543f;
 
   /* Logotype */
-  --color-logotype-bg: #2a2828;
+  --color-logotype-bg: #4c1111;
   --color-text-logotype: #c1bfb8;
   --font-logotype-size: 1rem;
 
   /* Global menu */
-  --color-menu-bg: #5a5b5e;
+  --color-menu-bg: #aae1a3;
   /* Links */
   --color-link-bg: #78766e;
   --color-link-hover: #fff;
