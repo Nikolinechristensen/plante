@@ -40,7 +40,10 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-card-bg-inverted);
 }
-/* for at få pilen til at hove */
-/* #din class */{
-cursor: pointer;
+
+#sund:hover,
+#gul:hover,
+#brun:hover,
+#trist:hover {
+  cursor: pointer;
 }

@@ -1,21 +1,21 @@
 :root {
   /* Background color */
-  --color-bg: #fef2c2;
+  --color-bg: white;
 
   /* Header background color */
-  --color-head-bg: #80543f;
+  --color-head-bg: #4a2210;
 
   /* Logotype */
-  --color-logotype-bg: #4c1111;
-  --color-text-logotype: #c1bfb8;
+  --color-logotype-bg: #fec2e5;
+  --color-text-logotype: #ffffff;
   --font-logotype-size: 1rem;
 
   /* Global menu */
-  --color-menu-bg: #aae1a3;
+  --color-menu-bg: #4a2210;
   /* Links */
-  --color-link-bg: #78766e;
+  --color-link-bg: #fef2c2;
   --color-link-hover: #fff;
-  --color-link-active: #99958f;
+  --color-link-active: #fef2c2;
   --border-radius-links: 1px;
 
   /* Headlines (size)*/
@@ -28,11 +28,11 @@
   --font-sub1-size: 1rem;
 
   /* Headlines (color) */
-  --color-headline-bg: #4b4545;
+  --color-headline-bg: #4a2210;
 
   /* Tekst */
   --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text-inverted: #ffffff;
 
   /* Andet tekst */
   --followup-text-size: 1rem;
@@ -44,10 +44,10 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #e3e1d8;
-  --color-card-bg-inverted: #4d4e4f;
-  --color-cta-card-bg: #847f7e;
-  --color-cta-card-bg-inverted: #c0bfb9;
+  --color-card-bg: #a4bf6b83;
+  --color-card-bg-inverted: #fef2c2;
+  --color-cta-card-bg: #ffffff;
+  --color-cta-card-bg-inverted: #ffffff;
 
   /* Fonts & font weights*/
   --font-family-sans: ui-sans-serif;
@@ -57,5 +57,14 @@
   --font-weight-light: 200;
 
   /* Infographics background colors*/
-  --color-info-bg: #676161;
+  --color-info-bg: #fec2e5;
+  .info-graphic {
+    background-color: #fef2c2;
+  }
+
+  .info-text h2 {
+    color: #ffffff;
+  }
 }
+
+/* #fef2c2; */
