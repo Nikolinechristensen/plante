@@ -235,19 +235,37 @@
 
     <main>
       <h1>INDBERET</h1>
-      <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
-      </section>
+      ...
+      <form aria-label="EK signup form">
+        ...
+
+        <div class="form-group">
+          <label for="department">Department</label>
+          <select id="department" name="department" aria-describedby="department-error" required>
+            <option value="">Choose a department</option>
+            <option value="Frontend" selected>Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="Design">Design</option>
+          </select>
+          <p id="department-error" class="error-message">Please choose a department</p>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" aria-describedby="message-error" required>I would like to learn more about forms.</textarea>
+          <p id="message-error" class="error-message">Please enter a message</p>
+        </div>
+
+        <button>Sign up</button>
+      </form>
+      ... ...
+      <div>
+        <p>Full name: <span id="name_output"></span></p>
+        <p>Email: <span id="email_output"></span></p>
+        <p>Department: <span id="department_output"></span></p>
+        <p>Message: <span id="message_output"></span></p>
+      </div>
+      ...
     </main>
     <footer>
       <nav>

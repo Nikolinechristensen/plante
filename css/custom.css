@@ -32,7 +32,7 @@
 
   /* Tekst */
   --color-text: #000;
-  --color-text-inverted: #ffffff;
+  --color-text-inverted: #000000;
 
   /* Andet tekst */
   --followup-text-size: 1rem;
