@@ -1,27 +1,6 @@
 #webform {
   background-color: var(--form-background-color);
 }
-main {
-  display: grid;
-  gap: 2rlh;
-  @media (min-width: 600px) {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-section {
-  display: grid;
-  gap: 1rlh;
-  align-content: start;
-}
-
-.output div {
-  background: #f5f5f5;
-  padding: 1rlh;
-  border-radius: 6px;
-  display: grid;
-  gap: 0.5rlh;
-}
 
 /* #form-section,
 #form-summary {
@@ -51,3 +30,105 @@ section {
   margin: 0 0 1.2rem 0;
   padding: 0;
 } */
+
+/* dannis øvelser */
+
+form {
+  accent-color: #5000ca;
+}
+input,
+textarea,
+select {
+  border: 1px solid #ccc;
+  padding: 0.25rlh;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px #0001;
+}
+textarea {
+  min-height: 7lh;
+  resize: vertical;
+}
+button {
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.25rlh 0.5rlh;
+  cursor: pointer;
+}
+.error-message {
+  color: darkred;
+}
+
+/* Layout */
+form {
+  display: grid;
+  gap: 1lh;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.1rlh;
+}
+
+/* Pseudo-classes */
+:focus-visible {
+  outline: 2px solid slateblue;
+  outline-offset: 1px;
+}
+
+button:hover {
+  background: #222;
+}
+
+button:active {
+  scale: 0.98;
+}
+
+/* validering */
+.error-message {
+  display: none;
+}
+.form-group:has(:required) {
+  label::after {
+    content: " *";
+    color: red;
+  }
+}
+
+.form-group:has(:user-invalid) {
+  input,
+  textarea,
+  select {
+    outline: 2px solid red;
+    border-color: darkred;
+  }
+  .error-message {
+    display: block;
+  }
+}
+
+html {
+  container: preview / inline-size;
+}
+main {
+  display: grid;
+  gap: 2rlh;
+  @media (min-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+section {
+  display: grid;
+  gap: 1rlh;
+  align-content: start;
+}
+
+.output div {
+  background: #f5f5f5;
+  padding: 1rlh;
+  border-radius: 6px;
+  display: grid;
+  gap: 0.5rlh;
+}
