@@ -12,6 +12,12 @@ header {
   height: min-content;
   background-color: var(--color-head-bg);
 }
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
 #main-disclamer {
   height: 225px;
   background-color: var(--color-head-bg);
@@ -35,7 +41,7 @@ h1 {
   font-weight: var(--font-weight-bold);
   color: var(--color-text-inverted);
   margin: 5px 0;
-  line-height: 1.3rem;
+  line-height: 1.1;
   text-align: left;
 }
 
