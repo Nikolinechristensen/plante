@@ -16,10 +16,11 @@
 }
 #forside article {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 3fr;
   background-color: var(--color-link-bg);
   border-radius: var(--border-radius-links);
   padding: 1rem;
+  gap: 1rem;
 }
 #forside h1 {
   font-size: 4rem;
@@ -49,4 +50,95 @@
   height: auto;
   display: inline-block;
   vertical-align: text-top;
+}
+article img {
+  width: 100px;
+  margin: auto;
+}
+
+article h2 {
+  color: var(--color-head-bg);
+  padding: 0.7rem;
+  margin: 0 0 1rem 0;
+}
+
+article p {
+  margin: 0;
+  color: var(--color-head-bg);
+}
+
+article a,
+.news a {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--color-head-bg);
+  color: var(--color-head-bg);
+  padding: 0.7rem 1.2rem;
+  text-decoration: none;
+}
+
+/* HØJRE SIDE */
+#breaking-news {
+  background-color: var(--color-head-bg);
+  padding-bottom: 1rem;
+  border-radius: 0;
+}
+
+#breaking-news h2 {
+  background-color: var(--color-head-bg);
+  color: white;
+  margin: 0;
+  padding: 1rem;
+}
+
+#breaking-news {
+  background-color: var(--color-info-bg);
+  padding-bottom: 1rem;
+  border-radius: 0;
+}
+
+.news {
+  padding: 1rem;
+}
+
+.news p {
+  margin: 0;
+  color: var(--color-head-bg);
+}
+
+.news a {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--color-info-bg);
+  color: var(--color-head-bg);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+[popover] {
+  background: whitesmoke;
+  border: 1px gainsboro solid;
+  padding: 1rem;
+  margin: auto;
+
+  translate: 0 -4rem;
+  opacity: 0;
+  transition: 0.3s;
+  transition-behavior: allow-discrete;
+
+  max-height: 80vh;
+}
+
+/* popup details */
+
+[popover]:popover-open {
+  translate: none;
+  opacity: 1;
+  transition: 3s;
+  transition-timing-function: var(--easing);
+}
+@starting-style {
+  [popover]:popover-open {
+    translate: 0 4rem;
+    opacity: 1;
+  }
 }
