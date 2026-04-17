@@ -40,3 +40,10 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-card-bg-inverted);
 }
+
+#sund:hover,
+#gul:hover,
+#brun:hover,
+#trist:hover {
+  cursor: pointer;
+}
