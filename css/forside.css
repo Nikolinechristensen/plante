@@ -38,7 +38,6 @@
   grid-template-rows: repeat(2, minmax(200px, min-content));
   gap: 1rem;
   align-items: center;
-  justify-content:;
 }
 #breaking {
   grid-template-rows: repeat(auto-fit, minmax(50px, min-content));
@@ -52,7 +51,7 @@
   vertical-align: text-top;
 }
 article img {
-  width: 100px;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -71,13 +70,12 @@ article a,
 .news a {
   display: inline-block;
   margin-top: 1rem;
-  background-color: var(--color-head-bg);
+  background-color: var(#4a2210);
   color: var(--color-head-bg);
   padding: 0.7rem 1.2rem;
   text-decoration: none;
 }
 
-/* HØJRE SIDE */
 #breaking-news {
   background-color: var(--color-head-bg);
   padding-bottom: 1rem;
@@ -85,7 +83,7 @@ article a,
 }
 
 #breaking-news h2 {
-  background-color: var(--color-head-bg);
+  background-color: rgb(234, 0, 0);
   color: white;
   margin: 0;
   padding: 1rem;
@@ -95,6 +93,9 @@ article a,
   background-color: var(--color-info-bg);
   padding-bottom: 1rem;
   border-radius: 0;
+}
+#breaking-news p {
+  color: red;
 }
 
 .news {
@@ -109,23 +110,24 @@ article a,
 .news a {
   display: inline-block;
   margin-top: 1rem;
-  background-color: var(--color-info-bg);
+  background-color: var(#fef2c2);
   color: var(--color-head-bg);
   padding: 0.5rem 1rem;
   text-decoration: none;
 }
 [popover] {
-  background: whitesmoke;
-  border: 1px gainsboro solid;
+  background: #fef2c2;
+  border: 1px #4a2210 solid;
   padding: 1rem;
   margin: auto;
 
   translate: 0 -4rem;
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.2s;
   transition-behavior: allow-discrete;
 
-  max-height: 80vh;
+  max-height: 100vh;
+  max-width: 80vh;
 }
 
 /* popup details */
@@ -133,7 +135,7 @@ article a,
 [popover]:popover-open {
   translate: none;
   opacity: 1;
-  transition: 3s;
+  transition: 0.3s;
   transition-timing-function: var(--easing);
 }
 @starting-style {

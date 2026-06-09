@@ -6,14 +6,14 @@
   --color-head-bg: #4a2210;
 
   /* Logotype */
-  --color-logotype-bg: #fec2e5;
+  --color-logotype-bg: #fef2c2;
   --color-text-logotype: #ffffff;
   --font-logotype-size: 1rem;
 
   /* Global menu */
   --color-menu-bg: #4a2210;
   /* Links */
-  --color-link-bg: #fef2c2;
+  --color-link-bg: #ffefef;
   --color-link-hover: #fff;
   --color-link-active: #fef2c2;
   --border-radius-links: 1px;
@@ -57,7 +57,7 @@
   --font-weight-light: 200;
 
   /* Infographics background colors*/
-  --color-info-bg: #fec2e5;
+  --color-info-bg: #ffefef;
   .info-graphic {
     background-color: #fef2c2;
   }
